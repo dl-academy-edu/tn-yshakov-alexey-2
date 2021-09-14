@@ -1,189 +1,235 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>DLK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <img src="#" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                </ul>
-            </nav>
-        <a href="#"><img src="#" alt="search">Свяжитесь с нами</a>
-    </header>
-    <main>
-        <section>
-            <span>01</span>
-            <img src="#" alt="monster on board">
-            <div>
-                <ul>
-                    <li><button type="button" class="button_action"></button></li>
-                    <li><button type="button" class="button_action"></button></li>
-                    <li><button type="button" class="button_action"></button></li>
-                    <li><button type="button" class="button_action"></button></li>
-                </ul>
-            </div>
-            <h1>THE OOH NOO Коллекция</h1>
-            <p>Из Словении</p>
-            <button type="button" class="button_primary">Смотреть</button>
-            <p>Бесплатная доставка при заказе от 2990 $</p>
-        </section>
-        <section class="service">
-            <h2>Каталог</h2>
-            <ul>
-                <li>
-                    <a href="#"><p>одежда Для мальчиков</p></a>
-                    <a href="#"><img src="#" alt="accessories"></a>
+    <header class="header container">
+        <img src="img/index/logo.png" alt="logo" clas="logo header__logo">
+        <nav class="header__nav">
+            <ul class="header__list undoted">
+                <li class="header__link">
+                    <a href="#">Новости</a>
                 </li>
-                <li>
-                    <div>
-                        <a href="#"><p>товары для праздников</p></a>
-                        <a href="#"><img src="#" alt="accessories"></a>
-                    </div>
+                <li class="header__link">
+                    <a href="#">Каталог</a>
                 </li>
-                <li>
-                    <div>
-                        <a href="#"><p>Игрушки</p></a>
-                        <a href="#"><img src="#" alt="accessories"></a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="#"><p>Аксессуары</p></a>
-                        <a href="#"><img src="#" alt="accessories"></a>
-                     </div>
+                <li class="header__link">
+                    <a href="#">О нас</a>
                 </li>
             </ul>
-            <div>
-                <button type="button" class="button_left"><img src="#" alt="button_left"></button>
-                <button type="button" class="button_right"><img src="#" alt="button_right"></button>
+        </nav>
+        <a href="#"><img src="img/index/loop.jpg" alt="search" class="header__loop"></a>
+        <a class="header-link"href="#">Свяжитесь с нами</a>
+    </header>
+    <main>
+        <section class="banner container">
+            <div class="banner__wrapper">   
+                <div class="banner__screen">    
+                    <span class="banner_num">01</span>
+                    <ul class="banner__list undoted">
+                        <li><button type="button" class="banner__btn banner__link-one"></button></li>
+                        <li><button type="button" class="banner__btn banner__link-two"></button></li>
+                        <li><button type="button" class="banner__btn banner__link-thre"></button></li>
+                        <li><button type="button" class="banner__btn banner__link-four"></button></li>
+                    </ul>
+                </div>
+            
+                <div class="banner__head">
+                    <h1 class="banner__title">THE OOH NOO Коллекция</h1>
+                    <p class="banner__heading">Из Словении</p>
+                    <button type="button" class="button_banner button">Смотреть</button>
+                </div>
+            </div>
+            <img src="img/index/banner.png" alt="monster on board" class="banner__img">
+            <a href="#" target="_blank" class="banner__link">Бесплатная доставка при заказе от 2990 $</a>
+        </section>
+        <section class="services container">
+            <h2 class="services__heading">Каталог</h2>
+            <ul class="services__list undoted">
+                <li class="services__li services__img_one">
+                    <a href="#">
+                        <p class="services__text">одежда Для мальчиков</p>
+                    </a>
+                </li>
+                <li class="services__li services__img_two">
+                    <a href="#">
+                        <p class="services__text">товары для праздников</p>
+                    </a>
+                </li>
+                <li class="services__li services__img_three">
+                    <a href="#">
+                        <p class="services__text">Игрушки</p>
+                    </a>
+                </li>
+                <li class="services__li services__img_four">
+                    
+                    <a href="#">
+                        <p class="services__text">Аксессуары</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="services__arrow">
+                <button type="button" class="services__arrow-left">
+                    <svg width="35" height="37" viewBox="-4 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"></path>
+                      </svg>
+                </button>
+                <button type="button" class="services__arrow-right">
+                    <svg width="35" height="37" viewBox="-5 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"></path>
+                      </svg>
+                </button>
                 <p>Засветка неба наблюдаема. Приливное трение, после осторожного анализа, традиционно выслеживает
                     близкий Южный Треугольник.</p>
             </div>
         </section>
-        <section>
-            <img src="#" alt="woman">
-            <div>
-                <h3>доставка</h3>
-                <a href="#"><span>Доставка</span></a>
-                <p>Гарантия качества</p>
-                <p>Оплата</p>
+        <section class="delivery container">
+            <img src="img/index/woman.png" alt="woman" class="delivery__img">
+            <div class="delivery__info">
+                <h3 class="delivery__title">доставка</h3>
+                <a href="#" class="delivery__link"><span>Доставка</span></a>
+                <p class="delivery__heading">Гарантия качества</p>
+                <p class="delivery__heading">Оплата</p>
                 <p>Бесспорно, уравнение времени однократно. Многие кометы имеют два хвоста, однако метеорный дождь
                     вращает параллакс, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9.</p>
                 <p>Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
                     астероидный Тукан. Туманность Андромеды ищет метеорит.</p>
-                <button type="button" class="button_primary">узнать больше</button>
+                <button type="button" class="button button_delivery">узнать больше</button>
             </div>
         </section>
-        <section>
-            <h5>Awards</h5>
-            <ul>
-                <li>
-                    <img src="#" alt="awards">
+        <section class="awards container">
+            <h5 class="awards__title hidden">Awards</h5>
+            <ul class="awards__list undoted">
+                <li class="Awards__item">
+                    <img src="img/index/awardone.png" alt="awards">
                 </li>
-                <li>
-                    <img src="#" alt="awards">
+                <li class="Awards__item">
+                    <img src="img/index/awardtwo.png" alt="awards">
                 </li>
-                <li>
-                    <img src="#" alt="awards">
+                <li class="Awards__item">
+                    <img src="img/index/awardthree.png" alt="awards">
                 </li>
-                <li>
-                    <img src="#" alt="awards">
+                <li class="Awards__item">
+                    <img src="img/index/awardonefour.png" alt="awards">
                 </li>
             </ul>
         </section>
-        <article>
-            <div>
-                <h4>Design Life Kids</h4>
-                <p>О нас</p>
-                <p>Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
-                    астероидный Тукан.</p>
-                <button type="button" class="button_primary">в каталог</button>
+        <article class="about container">
+            <div class="about__design">   
+                <div class="about__wrapper">
+                    <h4 class="about__title-design">Design Life Kids</h4>
+                    <p>О нас</p>
+                    <p class="design__text">Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
+                        астероидный Тукан.</p>
+                    </div>
+                <button type="button" class=" button about__button">в каталог</button>
             </div>
-            <div>
-                <h4>Контакты</h4>
-                <p>Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость
-                    вращения отражает астероидный Тукан.</p>
-                <img src="#" alt="map">
+            <div class="about__contacts">
+                <div class="about__wrapper">
+                    <h4 class="about__title-contacts">Контакты</h4>
+                    <p>Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость
+                        вращения отражает астероидный Тукан.</p>
+                </div>
+                <img src="img/index/map.png" alt="map" class="about__map">
             </div>
         </article>
     </main>
     <footer>
-        <div>
-            <h5>Меню</h5>
-            <ul>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                </li>
-                <li>
-                    <a href="#">Новинки</a>
-                </li>
-                <li>
-                    <a href="#">2018 Праздничный каталог</a>
-                </li>
-                <li>
-                    <a href="#">Дизайнерская одежда</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Информация покупателя</h5>
-            <img src="#" alt="line">
-            <ul>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-                <li>
-                    <a href="#">Скидки</a>
-                </li>
-                <li>
-                    <a href="#">Покупка и возврат</a>
-                </li>
-                <li>
-                    <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                    <a href="#">Поиск</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Контакты</h5>
-            <img src="#" alt="line">
-            <div>
-                <span>Email</span>
-                <button type="button" class="button_email"><img src="#" alt="email"></button>
+        <div class="footer container"> 
+            <div class="footer__nav">   
+                <div class="footer__menu">
+                    <h5>Меню</h5>
+                    <ul class="footer__list undoted" >
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="#">2018 Праздничный каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Дизайнерская одежда</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h5>Информация покупателя</h5>
+                    <ul class="footer__list undoted">
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Скидки</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Поиск</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <h5>Контакты</h5>
+                    <div>
+                        <span>Email</span>
+                        <button type="button" class="button_email"><img src="#" alt="email"></button>
+                    </div>
+                    <ul class="footer__list footer__facebook undoted">
+                        <li>
+                            <a href="#"><img src="#" alt="facebook_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="twitter_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="printrest_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="instagram_logo"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="#"><img src="#" alt="facebook_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="twitter_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="printrest_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="instagram_logo"></a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p>Рейтинг компании</p>
-            <img src="#" alt="star_raiting">
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
-            <a href="#">Дизайн — Direct Line Development</a>
+            <div class="footer__endinfo">
+                <p>Рейтинг компании</p>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>                                         
+                <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+                <a href="#">Дизайн — Direct Line Development</a>
+            </div>
         </div>
     </footer>
 </body>

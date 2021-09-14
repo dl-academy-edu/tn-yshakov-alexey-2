@@ -5,42 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
+    <link rel="stylesheet" href="css/common.css" class="css" />
+    <link rel="stylesheet" href="css/toys.css" class="css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <header>
-        <img src="#" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">О нас</a></li>
+    <header class="header container">
+        <img src="img/index/logo.png" alt="logo" clas="logo header__logo">
+        <nav class="header__nav">
+            <ul class="header__list undoted">
+                <li class="header__link">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">О нас</a>
+                </li>
             </ul>
         </nav>
-        <img src="#" alt="search">
-        <a href="#">Свяжитесь с нами</a>
+        <a href="#"><img src="img/index/loop.jpg" alt="search" class="header__loop"></a>
+        <a class="header-link"href="#">Свяжитесь с нами</a>
     </header>
     <main>
-        <h1>Детские игрушки</h1>
-        <aside>
-            <nav>
-                <ul>
+        <h1 class="toy__heading container">Детские игрушки</h1>
+        <aside class="container">
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list undoted">
                     <li>
                         <button class="button">Главная</button>
                     </li>
                 </ul>
-                <ul>
+                <ul class="breadcrumb__list undoted">
                     <li>
                         <button class="button">Каталог</button>
                     </li>
                 </ul>
-                <ul>
+                <ul class="breadcrumb__list undoted">
                     <li>
                         <button class="button">Игрушки</button>
                     </li>
-                </ul>
+                </ul class="breadcrumb__list undoted">
             </nav>
             <div>
-                <ul>
+                <ul class="filter__list undoted">
                     <li>
                         <h2>Цена</h2>
                         <label class="">
@@ -86,46 +100,58 @@
                         <span>20-50</span>
                     </li>
                     <li>
-                        <button type="button" class="button_primary">в каталог</button>
+                        <button type="button" class="button button_filter">в каталог</button>
                     </li>
                 </ul>
             </div>
         </aside>
-        <section>
+        <section class="products container">
             <h3>Product</h3>
-            <ul>
-                <li>
-                    <img src="#" alt="shark">
-                    <a href="#">Кресло груша SHARKY BEAN</a>
-                    <a href="#">$60.00 USD</a>
+            <ul class="products__list undoted">
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade1.png" alt="shark">
+                    </a>
+                    <a href="#" class="item__text">Кресло груша SHARKY BEAN</a>
+                    <a href="#" class="item__price">$60.00 USD</a>
                 </li>
-                <li>
-                    <img src="#" alt="frame">
-                    <a href="#">Декоративные рамки BRASS DECO</a>
-                    <a href="#">$66.00 USD</a>
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade2.png" alt="frame">
+                    </a>
+                    <a href="#" class="item__text">Декоративные рамки BRASS DECO</a>
+                    <a href="#" class="item__price">$66.00 USD</a>
                 </li>
-                <li>
-                    <img src="#" alt="apron">
-                    <a href="#">Фартук CIBO FULL</a>
-                    <a href="#">$60.00 USD</a>
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade3.png" alt="apron">
+                    </a>
+                    <a href="#" class="item__text">Фартук CIBO FULL</a>
+                    <a href="#" class="item__price">$60.00 USD</a>
                 </li>
-                <li>
-                    <img src="#" alt="bubblegum">
-                    <a href="#">КАвтомат с жвачкой GATCHA GATCHA</a>
-                    <a href="#">$56.00 USD</a>
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade4.png" alt="bubblegum">
+                    </a>
+                    <a href="#" class="item__text">КАвтомат с жвачкой GATCHA GATCHA</a>
+                    <a href="#" class="item__price">$56.00 USD</a>
                 </li>
-                <li>
-                    <img src="#" alt="shark">
-                    <a href="#">Свеча CHRISTMAS ADVENT SCENTED</a>
-                    <a href="#">$29.00 USD</a>
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade5.png" alt="shark">
+                    </a>
+                    <a href="#" class="item__text">Свеча CHRISTMAS ADVENT SCENTED</a>
+                    <a href="#" class="item__price">$29.00 USD</a>
                 </li>
-                <li>
-                    <img src="#" alt="tea spoons">
-                    <a href="#">набор чайных ложек</a>
-                    <a href="#">$56.00 USD</a>
+                <li class="products__item">
+                    <a href="#">
+                        <img src="img/toys/trade6.png" alt="tea spoons">
+                    </a>
+                    <a href="#" class="item__text">набор чайных ложек</a>
+                    <a href="#" class="item__price">$56.00 USD</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="products__nav undoted">
                 <li>
                     <button type="button" class="button_scrol">1</button>
                 </li>
@@ -142,74 +168,90 @@
         </section>
     </main>
     <footer>
-        <div>
-            <h5>Меню</h5>
-            <ul>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                </li>
-                <li>
-                    <a href="#">Новинки</a>
-                </li>
-                <li>
-                    <a href="#">2018 Праздничный каталог</a>
-                </li>
-                <li>
-                    <a href="#">Дизайнерская одежда</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Информация покупателя</h5>
-            <img src="#" alt="line">
-            <ul>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-                <li>
-                    <a href="#">Скидки</a>
-                </li>
-                <li>
-                    <a href="#">Покупка и возврат</a>
-                </li>
-                <li>
-                    <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                    <a href="#">Поиск</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Контакты</h5>
-            <img src="#" alt="line">
-            <div>
-                <span>Email</span>
-                <button type="button" class="button_email"><img src="#" alt="email"></button>
+        <div class="footer container"> 
+            <div class="footer__nav">   
+                <div class="footer__menu">
+                    <h5>Меню</h5>
+                    <ul class="footer__list undoted" >
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="#">2018 Праздничный каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Дизайнерская одежда</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h5>Информация покупателя</h5>
+                    <ul class="footer__list undoted">
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Скидки</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Поиск</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <h5>Контакты</h5>
+                    <div>
+                        <span>Email</span>
+                        <button type="button" class="button_email"><img src="#" alt="email"></button>
+                    </div>
+                    <ul class="footer__list footer__facebook undoted">
+                        <li>
+                            <a href="#"><img src="#" alt="facebook_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="twitter_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="printrest_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="instagram_logo"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="#"><img src="#" alt="facebook_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="twitter_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="printrest_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="instagram_logo"></a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p>Рейтинг компании</p>
-            <img src="#" alt="star_raiting">
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
-            <a href="#">Дизайн — Direct Line Development</a>
+            <div class="footer__endinfo">
+                <p>Рейтинг компании</p>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>                                         
+                <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+                <a href="#">Дизайн — Direct Line Development</a>
+            </div>
         </div>
     </footer>
 </body>

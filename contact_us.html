@@ -4,44 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLK</title>
+    <title>Contact US</title>
+    <link rel="stylesheet" href="css/common.css" class="css" />
+    <link rel="stylesheet" href="css/contact_us.css" class="css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <header>
-        <img src="#" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                </ul>
-            </nav>
-        <img src="#" alt="search">
-        <a href="#">Свяжитесь с нами</a>
+    <header class="header container">
+        <img src="img/index/logo.png" alt="logo" clas="logo header__logo">
+        <nav class="header__nav">
+            <ul class="header__list undoted">
+                <li class="header__link">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">О нас</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#"><img src="img/index/loop.jpg" alt="search" class="header__loop"></a>
+        <a class="header-link"href="#">Свяжитесь с нами</a>
     </header>
     <main>
-        <section>
-            <h1>
+        <section class="container">
+            <h1 class="contactus__title">
                 Контакты
             </h1>
-            <nav>
-                <ul>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list undoted">
                     <li>
                         <button class="button">Главная</button>
                     </li>
                     <li>
-                        <button class="button">Контакты</button>
+                        <p>Контакты</p>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section>
-            <div>
+        <section class="contact-us container">
+            <div class="contact-us__screen">
                 <h2>Имя</h2>
                 <input type="text">
                 <h2>Телефон</h2>
                 <input type="text">
-                <div>
+                <div class="screen__item">
                     <h2>Телефон</h2>
                     <input type="text">
                     <h2>Email</h2>
@@ -49,9 +63,8 @@
                 </div>
                 <h2>Комментарий</h2>
                 <input type="text">
-                <input type="text">
                 <p>Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных</p>
-                <button type="button" class="button">Отправить</button>
+                <button type="button" class="button contactus__button">Отправить</button>
             </div>
             <div>
                 <p>Наша служба поддержки всегда готова помочь с любыми проблемами, с которыми вы столкнулись.</p>
@@ -62,74 +75,90 @@
         </section>
     </main>
     <footer>
-        <div>
-            <h5>Меню</h5>
-            <ul>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                </li>
-                <li>
-                    <a href="#">Новинки</a>
-                </li>
-                <li>
-                    <a href="#">2018 Праздничный каталог</a>
-                </li>
-                <li>
-                    <a href="#">Дизайнерская одежда</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Информация покупателя</h5>
-            <img src="#" alt="line">
-            <ul>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-                <li>
-                    <a href="#">Скидки</a>
-                </li>
-                <li>
-                    <a href="#">Покупка и возврат</a>
-                </li>
-                <li>
-                    <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                    <a href="#">Поиск</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h5>Контакты</h5>
-            <img src="#" alt="line">
-            <div>
-                <span>Email</span>
-                <button type="button" class="button_email"><img src="#" alt="email"></button>
+        <div class="footer container"> 
+            <div class="footer__nav">   
+                <div class="footer__menu">
+                    <h5>Меню</h5>
+                    <ul class="footer__list undoted" >
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="#">2018 Праздничный каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Дизайнерская одежда</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <h5>Информация покупателя</h5>
+                    <ul class="footer__list undoted">
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Скидки</a>
+                        </li>
+                        <li>
+                            <a href="#">Покупка и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="#">Поиск</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <h5>Контакты</h5>
+                    <div>
+                        <span>Email</span>
+                        <button type="button" class="button_email"><img src="#" alt="email"></button>
+                    </div>
+                    <ul class="footer__list footer__facebook undoted">
+                        <li>
+                            <a href="#"><img src="#" alt="facebook_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="twitter_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="printrest_logo"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="#" alt="instagram_logo"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="#"><img src="#" alt="facebook_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="twitter_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="printrest_logo"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="#" alt="instagram_logo"></a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p>Рейтинг компании</p>
-            <img src="#" alt="star_raiting">
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
-            <a href="#">Дизайн — Direct Line Development</a>
+            <div class="footer__endinfo">
+                <p>Рейтинг компании</p>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#0E0E0E"/>
+                </svg>                                         
+                <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+                <a href="#">Дизайн — Direct Line Development</a>
+            </div>
         </div>
     </footer>
 </body>

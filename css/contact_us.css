@@ -1,0 +1,22 @@
+.contactus__title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606; 
+}
+
+.contact-us {
+    display: flex;
+}
+
+.contact-us__screen {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.screen__item {
+    display: flex;
+}
