@@ -33,45 +33,66 @@
         <a href="#"><img src="img/index/loop.jpg" alt="search" class="header__loop"></a>
         <a class="header-link"href="#">Свяжитесь с нами</a>
     </header>
-    <main>
-        <section class="container">
+    <main class="container">
+        <section >
             <h1 class="contactus__title">
                 Контакты
             </h1>
             <nav class="breadcrumb">
                 <ul class="breadcrumb__list undoted">
-                    <li>
-                        <button class="button">Главная</button>
+                    <li class="breadcrumb__item">
+                        <a href="index.html" class="breadcrumb__link">Главная</a>
                     </li>
-                    <li>
+                    <li class="breadcrumb__item">
                         <p>Контакты</p>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section class="contact-us container">
-            <div class="contact-us__screen">
-                <h2>Имя</h2>
-                <input type="text">
-                <h2>Телефон</h2>
-                <input type="text">
-                <div class="screen__item">
-                    <h2>Телефон</h2>
-                    <input type="text">
-                    <h2>Email</h2>
-                    <input type="text">
+        <section class="contact-us">
+                <form action="#" class="contact__form">
+                
+                    <fieldset>
+                        <div class="label-wrapper">
+                            <label for="input-name">Имя</label>
+                            <input type="text" id="input-name" class="contact__input" placeholder="Ivan Ivanov" >
+                        </div>
+                    </fieldset>
+                    <fieldset class="field_2_column">
+                        <div class="label-wrapper">
+                            <label for="input-phone">Телефон</label>
+                            <input type="number" id="input-phone" class="contact__input" required>
+                        </div>
+                        <div class="label-wrapper">
+                            <label for="input-email">Email</label>
+                            <input type="email" id="input-email" class="contact__input" required>
+                        </div>        
+                            
+                        
+                    </fieldset>
+                    <fieldset>
+                        <div class="label-wrapper">
+                            <label for="input-coment">Комментарий</label>
+                            <textarea cols="30" rows="10">
+                            </textarea>        
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="label-wrapper">
+                            <input type="checkbox" id="check-agreement" class="checkbox-input">
+                            <label for="check-agreement" class="checkbox-label">Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных</label>        
+                        </div>
+                        
+                    </fieldset>
+                    <button type="submit" class="button contactus__button">Отправить</button>
+                </form>
+                <div class="text_widht">
+                    <p >Наша служба поддержки всегда готова помочь с любыми проблемами, с которыми вы столкнулись.</p>
+                    <p">Пожалуйста, используйте форму, чтобы связаться с нами и сообщить о своих потребностях.
+                        Отправьте нам сообщение, и мы ответим как можно скорее.</p>
+                    <h3>наш менеджер готов помочь вам!</h3>
                 </div>
-                <h2>Комментарий</h2>
-                <input type="text">
-                <p>Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных</p>
-                <button type="button" class="button contactus__button">Отправить</button>
-            </div>
-            <div>
-                <p>Наша служба поддержки всегда готова помочь с любыми проблемами, с которыми вы столкнулись.</p>
-                <p>Пожалуйста, используйте форму, чтобы связаться с нами и сообщить о своих потребностях.
-                    Отправьте нам сообщение, и мы ответим как можно скорее.</p>
-                <h3>наш менеджер готов помочь вам!</h3>
-            </div>
+            
         </section>
     </main>
     <footer>

@@ -18,15 +18,23 @@ body {
     color: #1e0606;
 }
 
-.breadcrumb__list {
-    display: flex;
-    align-items: center;
-}
+
 
 a {
     color: #1E0606;
     text-decoration: none;
 } 
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606; 
+    margin: 0;
+}
 
 h5 {
     font-family: Open Sans;
@@ -35,6 +43,16 @@ h5 {
     font-size: 16px;
     line-height: 22px;
     color: #AAAAAA; 
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
 }
 
 .button {
@@ -50,6 +68,15 @@ h5 {
     cursor: pointer;
     border: none;
 }
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
 
 .hidden {
     font-size: 0;
@@ -68,6 +95,151 @@ h5 {
     margin: 0;
 }
 
+
+.delivery__heading, .about__heading {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+}
+
+
+
+/*  BREADCRUMB */
+
+.breadcrumb__item {
+    display: flex;
+    font-family: "Crimson Text";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1e0606;
+    margin-right: 20px;
+    align-items: center;
+  }
+  
+  .breadcrumb__link {
+    text-transform: capitalize;
+  }
+  
+  .breadcrumb__link_active {
+    color: #1e0606;
+    opacity: 0.5;
+  }
+  
+  .breadcrumb__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb__list li + li:before {
+    color: black;
+    content: " >";
+    margin-right: 20px;
+  }
+
+
+/*contact form*/
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606; 
+    margin-bottom: 3px;
+}
+
+input {
+    height: 50px;
+    
+}
+input:focus, textarea:focus {
+    border-color: #C29974;
+}
+input::placeholder {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+input, textarea {
+    border: 2px solid #CCCCCC;
+    padding: 14px 20px;
+    outline: none;
+    
+    
+}
+.label-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+
+.field_2_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field_2_column .label-wrapper:nth-child(1) {
+    padding-right: 20px;
+}
+.checkbox-input,
+.radio-input {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E0606; 
+    cursor: pointer;
+    padding-left: 35px;
+
+
+}
+.checkbox-label::before {
+    top: 0;
+    left: -3px;
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #c29974;
+    border-radius: 4px;
+    width: 16px;
+    height: 17px;
+    background: transparent;
+    
+    
+}
+
+.checkbox-label::after {
+    top: 2px;
+    left: 1px;
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/index/v_simbol.svg);
+    opacity: 0;
+}
+.checkbox-input:checked+.checkbox-label::after {
+    opacity: 1;
+}
 
 /*HEADER*/
 .header {
@@ -112,12 +284,30 @@ h5 {
     color: #1E0606; 
 }
 
+.logo:hover,
+.header__link:hover,
+.header__loop:hover,
+.header-link:hover {
+    opacity: 0.6;
+}
+
+.logo:active,
+.header__link:active,
+.header__loop:active,
+.header-link:active {
+    opacity: 0.2;
+}
+
+.header:checked {
+  background-color: yellow;
+}
+
 
 /*Footer*/
 footer {
     background: #434343;
     max-width: 1400px;
-    margin: 58px auto 0 auto;
+    margin:auto;
     padding: 100px 0px;
 }
 

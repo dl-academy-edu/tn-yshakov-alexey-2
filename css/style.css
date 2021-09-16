@@ -24,6 +24,7 @@
     flex-direction: column;
   }
 
+
 .banner__btn {
     width: 31px;
     height: 3px;
@@ -31,22 +32,14 @@
     border: none;
     cursor: pointer;
 }
-.banner__link-one {
-    top: 100px;
-}
-  
-.banner__link-two {
-    top: 111px;
-}
-  
-.banner__link-three {
-    top: 122px;
-}
-  
-.banner__link-four {
-    top: 133px;
+
+.banner__btn:hover {
+    background: rgba(30,6,6,0.6);
 }
 
+.banner__btn_on {
+    background: rgba(30,6,6,0.6);
+}
 
 .banner__screen {
     margin-left: 28px;
@@ -104,15 +97,6 @@
     margin-top: 90px;
 }
 
-.services__heading, .about__title-design, .about__title-contacts, .delivery__title {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
-}
-
 .services__list {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +107,9 @@
     max-width: 280px;
     padding: 50px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services__img_one {
@@ -166,6 +153,13 @@
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);    
 }
 
+.services__text:hover, .services__text:active {
+    text-decoration: underline;
+    text-decoration-skip-ink:none;
+    color: #fff;
+    
+}
+
 .services__arrow {
     display: flex;
     margin-top: 30px;
@@ -199,6 +193,7 @@
 }
 
 /*Delivery*/
+
 .delivery {
     display: flex;
     margin-top: 90px;
@@ -208,21 +203,42 @@
     background-color: #BEDAE6;
     max-width: 480px;
 }
-
+.delivery__title {
+    padding-left: 60px;
+}
 .delivery__info {
-    margin-left: 120px;
     max-width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0 45px 60px;
+    justify-content: space-between;
+}
+.delivery__list {
+    display: flex;
+    flex-direction: column;
 }
 
-.delivery__heading, .about__title-design + p {
-    font-family: Crimson Text;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 32px;
+
+.delivery__item {
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.delivery__item_wrap {
+    background: rgba(112,187,220,0.2);
+    padding: 11px 135px 11px 60px;
+}
+
+.delivery__text {
+    font-size: 16px;
+    line-height: 22px;
     color: #1E0606;
+    margin: 0;
+    margin-bottom: 11px;
+    padding-left: 60px;
 }
-
 .delivery__link {
     font-family: Crimson Text;
     font-style: italic;
@@ -231,6 +247,13 @@
     line-height: 32px;
     color: #1E0606; 
 }
+
+
+.button_delivery {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
 
 /*Awards*/
 
@@ -243,7 +266,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: 110px;
+    
 }
 
 .about__title {
@@ -261,22 +284,24 @@
     display: flex;
     margin: 92px auto 58px;
 }
-.about__wrapper {
+.about__wrapper, .about__wrapper_padding {
     display: flex;
     flex-direction: column;
     padding-left: 30px;
     background-color: #e1f0f7;
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     align-items: baseline
-    
 }
 
+.about__wrapper_padding {
+    padding-bottom: 70px;
+}
 .about__design {
-    margin-left: 79px;
+    margin-left: -30px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin-left: 57px;
+    
 }
 
 .about__contacts {
@@ -286,29 +311,30 @@
     align-items: baseline;
     margin-left: 57px;
 }
-.about__title-design,.about__title-contacts {
+.about__title-design,
+.about__title-contacts {
     margin-top: -25px;
-}
-.about__title-contacts + p {
-    max-width: 80%;
-    margin-top: -30px;
-}
-.about__title-design + p {
-    margin-top: -30px;
+    margin-bottom: 10px;
 }
 
-.design__text {
-    margin-top: -20px;
-    margin-bottom: 20px;
+.about__heading {
+    margin-top: -15px;
+    padding: 30px 0 10px 0;
+    margin-bottom: 0;
+}
+
+.about__text {
+    margin: 0px;
+    padding: 10px 0 20px 0;
 }
 
 .about__map {
-    margin-top: -30px;
-    margin-bottom: 58px;
+    margin-top: -70px;
+}
+.map__wrapper {
     align-self: center;
 }
 
 .about__button {
-    margin-left: 30px;
-    margin-top: -62px;
+    
 }

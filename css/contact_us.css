@@ -9,14 +9,19 @@
 
 .contact-us {
     display: flex;
+    
 }
 
-.contact-us__screen {
-    display: flex;
-    flex-direction: column;
+.contact__form {
+    max-width: 680px;
+    background: #e5eaf8;
+    padding: 42px 40px;
+    margin: 0 auto;
     margin-right: 120px;
+    width: 100%;
 }
 
-.screen__item {
-    display: flex;
+.text_widht{
+    max-width: 32%;
 }
+

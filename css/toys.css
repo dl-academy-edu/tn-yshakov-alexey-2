@@ -1,3 +1,8 @@
+.breadcrumb__heading {
+    margin-bottom: 50px;
+}
+
+
 .toy__heading {
     font-family: Montserrat;
     font-weight: bold;
@@ -5,11 +10,6 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606; 
-}
-
-.breadcrumb__list {
-    display: flex;
-    align-items: center;
 }
 
 .filter__list {

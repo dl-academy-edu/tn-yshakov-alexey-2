@@ -34,76 +34,111 @@
         <a class="header-link"href="#">Свяжитесь с нами</a>
     </header>
     <main>
-        <h1 class="toy__heading container">Детские игрушки</h1>
-        <aside class="container">
-            <nav class="breadcrumb">
-                <ul class="breadcrumb__list undoted">
-                    <li>
-                        <button class="button">Главная</button>
-                    </li>
-                </ul>
-                <ul class="breadcrumb__list undoted">
-                    <li>
-                        <button class="button">Каталог</button>
-                    </li>
-                </ul>
-                <ul class="breadcrumb__list undoted">
-                    <li>
-                        <button class="button">Игрушки</button>
-                    </li>
-                </ul class="breadcrumb__list undoted">
-            </nav>
+        <section class="breadcrumb__heading container">
+        <h1 class="toy__heading ">Детские игрушки</h1>
+        <nav class="breadcrumb">
+            <ul class="breadcrumb__list undoted">
+                <li class="breadcrumb__item">
+                    <a href="index.html" class="breadcrumb__link">Главная</a>
+                </li>                              
+                <li class="breadcrumb__item">
+                    <a href="products.html" class="breadcrumb__link">Каталог</a>
+                </li>                               
+                <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link breadcrumb__link_active">Игрушки</a>
+                </li>
+            </ul>
+        </nav>
+        </section>
+        <aside class="filter container">
             <div>
-                <ul class="filter__list undoted">
-                    <li>
-                        <h2>Цена</h2>
-                        <label class="">
-                            <input/>
-                            <span>0</span>
-                            <span>500</span>
-                        </label>
-                    </li>
-                    <li>
-                        <h2>Цвет</h2>
-                        <label>
-                            <input/>
-                            <span>Черный</span>
-                        </label>
-                        <label>
-                            <input/>
-                            <span>Синий</span>
-                        </label>
-                        <label>
-                            <input/>
-                            <span>Зеленый</span>
-                        </label>
-                        <label>
-                            <input/>
-                            <span>Белый</span>
-                        </label>
-                    </li>
-                    <li>
-                        <h2>Доставка</h2>
-                        <label>
-                            <input/>
-                            <span>Бесплатная доставка</span>
-                        </label>
-                        <label>
-                            <input/>
-                            <span>Быстрая доставка</span>
-                        </label>
-                    </li>
-                    <li>
-                        <h2>Колличество</h2>
-                        <span>0-5</span>
-                        <span>10-20</span>
-                        <span>20-50</span>
-                    </li>
-                    <li>
-                        <button type="button" class="button button_filter">в каталог</button>
-                    </li>
-                </ul>
-            </div>
+                <form>
+                    <fieldset class="field-range">
+                        <div class="label-wrapper label-wrapper-range" tabindex="0">
+                          <label for="range-input">Цена</label>
+                          <input type="range" id="range-input" min="0" max="500" />
+                        </div>
+                        <div class="range__period">
+                          <span class="range__num" tabindex="0">0</span>
+                          <span class="range__num" tabindex="0">500</span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul class="undoted checkbox-list">
+                            <li>
+                                <input type="checkbox" id="check-black" class="checkbox-input" checked/>
+                                <label for="check-black" class="checkbox-label" tabindex="0">Черный</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="check-blue"class="checkbox-input"/>
+                                <label for="check-blue" class="checkbox-label" tabindex="0">Синий</label>
+                             </li>
+                      <li>
+                        <input type="checkbox" id="check-green" class="checkbox-input"/>
+                        <label for="check-green" class="checkbox-label" tabindex="0">Зеленый</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="check-white" class="checkbox-input"/>
+                        <label for="check-white" class="checkbox-label" tabindex="0">Белый</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Доставка</legend>
+                    <ul class="undoted radio-list">
+                      <li>
+                        <input type="radio" id="radio-free" class="radio-input" name="shipping"/>
+                        <label for="radio-free" class="radio-label" tabindex="0">Бесплатная доставка</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="radio-fast" class="radio-input" name="shipping" checked/>
+                        <label for="radio-fast" class="radio-label" tabindex="0">Быстрая доставка</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="radio-limit">
+                    <legend>Amount</legend>
+                    <ul class="undoted radio-list radio-list-limit">
+                      <li tabindex="0">
+                        <input
+                          type="radio"
+                          id="radio-five"
+                          class="radio-input"
+                          name="amount"
+                          checked
+                        />
+                        <label for="radio-five" class="radio-label"></label>
+                        <span class="radio-text">0-5</span>
+                      </li>
+                      <li tabindex="0">
+                        <input
+                          type="radio"
+                          id="radio-twenty"
+                          class="radio-input"
+                          name="amount"
+                        />
+                        <label for="radio-twenty" class="radio-label"></label>
+                        <span class="radio-text radio-text_twenty">10-20</span>
+                      </li>
+                      <li tabindex="0">
+                        <input
+                          type="radio"
+                          id="radio-fifty"
+                          class="radio-input"
+                          name="amount"
+                        />
+                        <label for="radio-fifty" class="radio-label"></label>
+                        <span class="radio-text radio-text_fifty">20-50</span>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button type="button" class="button button_filter">в каталог</button>
+                  <button class="button choice__choice" type="submit" tabindex="0">
+                    Apply
+                  </button>
+                </form> 
+                </div>
         </aside>
         <section class="products container">
             <h3>Product</h3>
