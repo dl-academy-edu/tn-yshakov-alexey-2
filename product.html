@@ -48,7 +48,7 @@
                         <a href="toys.html" class="breadcrumb__link">Игрушки</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <р>Кресло груша SHARKY BEAN</p>
+                        <a href="" class="breadcrumb__link breadcrumb__link_active">Кресло груша SHARKY BEAN</a>
                     </li>
                 </ul>
             </nav>
@@ -80,28 +80,31 @@
             </div>
             <div class="product__heading">
                 <h1 class="product__title">Кресло груша SHARKY BEAN </h1>
-                <p>$60.00 USD</p>
-                <div class="product__bascket">       
-                    <button type="button" class="button"><svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 2C0 0.895431 0.966658 0 2.15909 0H16.8409C18.0333 0 19 0.895431 19 2C19 3.10457 18.0333 4 16.8409 4H2.15909C0.966658 4 0 3.10457 0 2Z" fill="#C29974"/>
-                        </svg>
+                <p class="all__money">$60.00 USD</p>
+                <div class="product__bascket"> 
+                    <div class="product__bascket_wrapper">    
+                        <button type="button" class="button product__button"><svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2C0 0.895431 0.966658 0 2.15909 0H16.8409C18.0333 0 19 0.895431 19 2C19 3.10457 18.0333 4 16.8409 4H2.15909C0.966658 4 0 3.10457 0 2Z" fill="#C29974"/>
+                            </svg>
                         </button>
-                    <input type="text">
-                    <button type="button" class="button"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 9.06818C0 7.87575 0.966658 6.90909 2.15909 6.90909H16.8409C18.0333 6.90909 19 7.87575 19 9.06818C19 10.2606 18.0333 11.2273 16.8409 11.2273H2.15909C0.966658 11.2273 0 10.2606 0 9.06818Z" fill="#C29974"/>
-                        <path d="M9.93182 19C8.73939 19 7.77273 18.0333 7.77273 16.8409V2.15909C7.77273 0.966658 8.73939 0 9.93182 0C11.1243 0 12.0909 0.966658 12.0909 2.15909V16.8409C12.0909 18.0333 11.1243 19 9.93182 19Z" fill="#C29974"/>
-                        </svg>
+                        <label for="input-num"></label>
+                        <input type="text" id="input-num" class="num__input" required placeholder="1">
+                        <button type="button" class="button product__button"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 9.06818C0 7.87575 0.966658 6.90909 2.15909 6.90909H16.8409C18.0333 6.90909 19 7.87575 19 9.06818C19 10.2606 18.0333 11.2273 16.8409 11.2273H2.15909C0.966658 11.2273 0 10.2606 0 9.06818Z" fill="#C29974"/>
+                            <path d="M9.93182 19C8.73939 19 7.77273 18.0333 7.77273 16.8409V2.15909C7.77273 0.966658 8.73939 0 9.93182 0C11.1243 0 12.0909 0.966658 12.0909 2.15909V16.8409C12.0909 18.0333 11.1243 19 9.93182 19Z" fill="#C29974"/>
+                            </svg>
                         </button>
-                    <button type="button" class="button product__button"><img src="#" alt="in basket"></button>
+                    </div>  
+                    <button type="button" class="button product__button_inbasket">В корзину</button>
                 </div>     
                 <ul class="product__like undoted">
-                    <li class="product__item">
+                    <li class="product__like_item">
                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z" fill="black"/>
                         </svg>
                         <p>Добавить в избранное</p>
                     </li>
-                    <li class="product__item">
+                    <li class="product__like_item">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 14.08C14.24 14.08 13.56 14.38 13.04 14.85L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.16 16.35C12.11 16.56 12.08 16.78 12.08 17C12.08 18.61 13.39 19.92 15 19.92C16.61 19.92 17.92 18.61 17.92 17C17.92 15.39 16.61 14.08 15 14.08Z" fill="black"/>
                         </svg>
@@ -114,12 +117,18 @@
             </div>
         </section>
         <section class="product-info">
-            <h3 class="product__heading hidden container">Описание</h3>
-            <div class="container">
-                <button type="button" class="button"><img src="#" alt="in basket">Описание</button>
-                <button type="button" class="button"><img src="#" alt="in basket">Отзывы</button>
-                <button type="button" class="button"><img src="#" alt="in basket">Характеристики</button>
-            </div>
+            <h3 class="hidden">Описание</h3>
+            <ul class="product_list undoted container">
+                <li class="product__item product__item_wrap">
+                    <a href="#" class="product__link">Описание</a>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="products__heading">Отзовы</a>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="products__heading">Характеристики</a>
+                </li>
+            </ul>
             <div class="product-info__wrraper">
                 <div class="product-info__text container">
                     <p class="product-info__item">
@@ -148,17 +157,17 @@
                 <li class="interesting__link">
                     <img src="img/product/trade4.png" alt="">
                     <a href="">Автомат с жвачкой GATCHA GATCHA</a>
-                    <p>$56.00 USD</p>
+                    <p class="all__money">$56.00 USD</p>
                 </li>
                 <li class="interesting__link">
                     <img src="img/product/trade5.png" alt="">
                     <a href="">Свеча CHRISTMAS ADVENT SCENTED</a>
-                    <p>$29.00 USD</p>
+                    <p class="all__money">$29.00 USD</p>
                 </li>
                 <li class="interesting__link">
                     <img src="img/product/trade6.png" alt="">
                     <a href="">набор чайных ложек</a>
-                    <p>$56.00 USD</p>
+                    <p class="all__money">$56.00 USD</p>
                 </li>
             </ul>
         </section>

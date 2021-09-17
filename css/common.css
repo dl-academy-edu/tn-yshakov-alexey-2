@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     outline-color: #c29974;
+    word-wrap: break-word
   }
 
 img {
@@ -96,7 +97,7 @@ h3 {
 }
 
 
-.delivery__heading, .about__heading {
+.delivery__heading, .about__heading, .products__heading {
     font-family: Crimson Text;
     font-style: italic;
     font-weight: normal;
@@ -105,8 +106,25 @@ h3 {
     color: #1E0606;
 }
 
+.delivery__link, .product__link {
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606; 
+}
+.all__money {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #1E0606;
+    margin-bottom: 41px;
 
-
+}
 /*  BREADCRUMB */
 
 .breadcrumb__item {

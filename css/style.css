@@ -100,7 +100,8 @@
 .services__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .services__li {
@@ -239,14 +240,7 @@
     margin-bottom: 11px;
     padding-left: 60px;
 }
-.delivery__link {
-    font-family: Crimson Text;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    color: #1E0606; 
-}
+
 
 
 .button_delivery {
@@ -290,7 +284,8 @@
     padding-left: 30px;
     background-color: #e1f0f7;
     padding-bottom: 35px;
-    align-items: baseline
+    align-items: baseline;
+    padding-right: 30px;
 }
 
 .about__wrapper_padding {
@@ -301,15 +296,16 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    width: 543px;
     
 }
 
 .about__contacts {
-    margin-left: 120px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     margin-left: 57px;
+    width: 543px;
 }
 .about__title-design,
 .about__title-contacts {
