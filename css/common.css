@@ -44,7 +44,23 @@ h5 {
     font-size: 16px;
     line-height: 22px;
     color: #AAAAAA; 
+    padding: 0 0 23px 0;
+    border-bottom: 22px ;
+    border-color: #585858;
+    border-bottom: 1px solid;
+    border-color: #585858;
+    margin: 0;
+    margin-right: 20px;
 }
+
+.footer__contacts h5 {
+    margin: 0;
+}
+
+.footer__menu ul,.footer__info ul {
+    margin-top: 25px;
+}
+
 
 h3 {
     font-family: Montserrat;
@@ -377,6 +393,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid;
+    border-color: #585858;
+    margin: 0;
     
 }
 .footer__endinfo, .footer__endinfo > a {
@@ -391,6 +410,89 @@ footer {
 .footer__facebook {
     display: flex;   
 }
-.footer__facebook > li {
-    margin: 0px 10px;
+
+.footer__form {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
+  
+.footer__form button {
+    width: 68px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+  
+.footer__fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+  
+.footer__fieldset label {
+    margin-bottom: 0;
+}
+.footer__input {
+    width: 312px;
+    height: 40px;
+    background-color: #666666;
+    border: 1px solid transparent;
+    outline: none;
+    color: #ffffff;
+}
+  
+.footer__input:hover,
+.footer__input:focus {
+    border: 1px solid #fffdfd;
+}
+  
+.footer__fieldset input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ebebeb;
+}
+
+.footer__linklist {
+    display: flex;
+}
+
+.footer__linklist li{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.footer__linklist li:hover, .footer__list li:hover {
+    opacity: .6;
+}
+
+
+.footer__raiting {
+
+}
+.rating_block {
+    width: 125px;
+    height: 25px;
+  }
+  .rating_block input[type="radio"] {
+    display: none;
+  }
+  .label_rating {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(/img/index/Star.svg) no-repeat 50% 0;
+    cursor: pointer;
+  }
+  /*Пишем правила смены положения background-а*/
+  .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+  .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+  .rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+  {
+    background: url(/img/index/Star_bright.svg) no-repeat 50% 0;
+    
+  }
