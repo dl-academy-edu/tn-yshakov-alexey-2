@@ -1,0 +1,345 @@
+.breadcrumb__heading {
+    margin-bottom: 50px;
+}
+
+
+.toy__heading {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606; 
+}
+
+.filter__list {
+    display: flex;
+}
+
+
+/*Products*/
+.products {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+.products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item__text {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.item__price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.products__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* filter*/
+.filter {
+    margin-bottom: 58px;
+    background: rgba(125, 151, 218, 0.2);
+  }
+  
+/* CHOICE-form */
+.filter__form {
+    display: flex;
+    align-items: start;
+    padding: 48px 0px;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+  
+legend {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1e0606;
+    text-transform: capitalize;
+}
+  
+.choice__form fieldset:nth-child(2) {
+    margin-right: 121px;
+}
+  
+.choice__form fieldset:nth-child(3) {
+    margin-right: 70px;
+}
+  
+.radio-limit {
+    margin-right: 60px;
+}
+  
+.checkbox-list li {
+    margin-bottom: 15px;
+    width: 75px;
+    display: flex;
+}
+  
+/* Range */
+  
+.field-range {
+    display: flex;
+    flex-direction: column;
+}
+  
+.label-wrapper-range {
+    width: 200px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 4px;
+}
+  
+.label-wrapper-range label {
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+  
+.range__period {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.range__num {
+    display: block;
+    margin-right: -5px;
+}
+  
+input[type="range"] {
+    padding: 0;
+    width: 188px;
+    height: 24px;
+    appearance: none;
+    background: transparent;
+    border: none;
+}
+  
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background-color: #c29974;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    background-image: url(..//img/index/round_range.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+  
+  /* CHeckbox, radio */
+
+  
+.checkbox-label,
+.radio-label {
+    position: relative;
+    padding: 0;
+    padding-left: 27px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1e0606;
+  }
+  
+.radio-list {
+    width: 131px;
+  }
+  
+.radio-list li {
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+.checkbox-list,
+.radio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.radio-list-limit {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.choice__choice {
+    margin-top: 38px;
+    padding: 9px 22px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.radio-label:before, .radio-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.radio-label:before {
+    top: 0;
+    left: -3px;
+    border: 2px solid #c29974;
+    border-radius: 50%;
+    width: 18px;
+    height: 17px;
+    background: transparent;
+}
+.radio-label:after {
+    top: 4px;
+    left: 2px;
+    width: 16px;
+    height: 15px;
+    background-image: url(..//img/index/ellipse_radio.svg);
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.radio-input:checked + .radio-label::after {
+    opacity: 1;
+}
+
+.radio-list-limit li {
+    width: 80px;
+    position: relative;
+}
+
+
+.radio-list-limit label:before, .radio-list-limit label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    border-radius: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.radio-list-limit label:before {
+    top: -1px;
+    left: 0px;
+    border: 0px;
+}
+
+.radio-list-limit label:after {
+    top: -1px;
+    left: 0px;
+    background: #f3d0db;
+    opacity: 0;
+}
+
+
+.radio-input:checked+.radio-list-limit label:after {
+    opacity: 1;
+}
+
+
+.radio-text {
+    position: absolute;
+    display: block;
+    top: 7px;
+    left: 29px;
+    cursor: pointer;
+  }
+  
+  .radio-text_twenty {
+    left: 19px;
+  }
+  
+  .radio-text_fifty {
+    left: 19px;
+  }
+
+.radio-list-limit label:hover:before {
+    background: #f3d0db;
+    opacity: .6;
+}
+
+.button_filter {
+    margin: 35px 0 0 0;
+}
+
+.products__scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 58px;
+}
+
+
+.arrow__scroll, .arrow__scroll,.button__scroll {
+    border: transparent;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button__scroll {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;  
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1E0606; 
+}
+
+.button__scroll:hover {
+    opacity: .6;
+}
+
+.button__scroll:active {
+    color: #C29974;
+}
+
+.product__num {
+    display: flex;
+    justify-content: space-between;
+    width: 234px;
+}
+
+.button__scroll_active {
+    color: #C29974
+}

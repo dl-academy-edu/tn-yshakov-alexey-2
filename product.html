@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>DLK</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="css/common.css" class="css" />
+    <link rel="stylesheet" href="css/product.css" class="css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,400;1,700&family=Montserrat:wght@300;600;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <header class="header container">
-        <img src="img/index/logo.png" alt="logo" class="logo header__logo">
+        <img src="img/index/logo.png" alt="logo" clas="logo header__logo">
         <nav class="header__nav">
             <ul class="header__list undoted">
                 <li class="header__link">
@@ -33,135 +34,143 @@
         <a class="header-link"href="#">Свяжитесь с нами</a>
     </header>
     <main>
-        <section class="banner container">
-            <div class="banner__wrapper">   
-                <div class="banner__screen">    
-                    <span class="banner_num">01</span>
-                    <ul class="banner__list undoted">
-                        <li>
-                            <button type="button" class="banner__btn banner__btn_on"></button>
-                        </li>
-                        <li>
-                            <button type="button" class="banner__btn"></button>
-                        </li>
-                        <li>
-                            <button type="button" class="banner__btn"></button>
-                        </li>
-                        <li>
-                            <button type="button" class="banner__btn"></button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="banner__head">
-                    <h1 class="banner__title">THE OOH NOO Коллекция</h1>
-                    <p class="banner__heading">Из Словении</p>
-                    <button type="button" class="button_banner button">Смотреть</button>
-                </div>
-            </div>
-            <img src="img/index/banner.png" alt="monster on board" class="banner__img">
-            <a href="#" target="_blank" class="banner__link">Бесплатная доставка при заказе от 2990 $</a>
-        </section>
-        <section class="services container">
-            <h2 class="services__heading">Каталог</h2>
-            <ul class="services__list undoted">
-                <li class="services__li services__img_one">
-                    <a href="#">
-                        <p class="services__text">одежда Для мальчиков</p>
-                    </a>
-                </li>
-                <li class="services__li services__img_two">
-                    <a href="#">
-                        <p class="services__text">товары для праздников</p>
-                    </a>
-                </li>
-                <li class="services__li services__img_three">
-                    <a href="#">
-                        <p class="services__text">Игрушки</p>
-                    </a>
-                </li>
-                <li class="services__li services__img_four">
-                    
-                    <a href="#">
-                        <p class="services__text">Аксессуары</p>
-                    </a>
-                </li>
-            </ul>
-            <div class="services__arrow">
-                <button type="button" class="services__arrow-left">
-                    <svg width="35" height="37" viewBox="-4 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"></path>
-                      </svg>
-                </button>
-                <button type="button" class="services__arrow-right">
-                    <svg width="35" height="37" viewBox="-5 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"></path>
-                      </svg>
-                </button>
-                <p>Засветка неба наблюдаема. Приливное трение, после осторожного анализа, традиционно выслеживает
-                    близкий Южный Треугольник.</p>
-            </div>
-        </section>
-        <section class="delivery container">
-            <img src="img/index/woman.png" alt="woman" class="delivery__img">
-            <div class="delivery__info">
-                <h2 class="delivery__title">доставка</h2>
-                <ul class="delivery__list undoted">
-                    <li class="delivery__item delivery__item_wrap">
-                        <a href="#" class="delivery__link">Доставка</a>
+        <section class="container">
+            <h3 class="product__heading hidden">Товар</h3>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list undoted">
+                    <li class="breadcrumb__item">
+                        <a href="index.html" class="breadcrumb__link">Главная</a>
                     </li>
-                    <li class="delivery__item">
-                        <a href="#" class="delivery__heading">Гарантия качества</a>
+                    <li class="breadcrumb__item">
+                        <a href="products.html" class="breadcrumb__link">Каталог</a>
                     </li>
-                    <li class="delivery__item">
-                        <a href="#" class="delivery__heading">Оплата</a>
+                    <li class="breadcrumb__item">
+                        <a href="toys.html" class="breadcrumb__link">Игрушки</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="" class="breadcrumb__link breadcrumb__link_active">Кресло груша SHARKY BEAN</a>
                     </li>
                 </ul>
-                <p class="delivery__text">Бесспорно, уравнение времени однократно. Многие кометы имеют два хвоста, однако метеорный дождь
-                    вращает параллакс, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9.</p>
-                <p class="delivery__text">Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
-                    астероидный Тукан. Туманность Андромеды ищет метеорит.</p>
-                <button type="button" class="button button_delivery">узнать больше</button>
+            </nav>
+        </section>
+        <section class="product container">
+            <div class="product__screen ">
+                <ul class="product__miniscreen undoted">
+                    <li class="product__miniscreen_arrow">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 16L15 3L28 16" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                            </svg>
+                    </li>
+                    <li>
+                        <img src="img/product/mimiscreen.jpg" alt="picture_1" class="product__miniscreen_img">
+                    </li>
+                    <li>
+                        <img src="img/product/mimiscreen1.jpg" alt="picture_1"class="product__miniscreen_img">
+                    </li>
+                    <li>
+                        <img src="img/product/mimiscreen2.jpg" alt="picture_1"class="product__miniscreen_img">
+                    </li>
+                    <li class="product__miniscreen_arrow">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L15 15L28 2" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                            </svg>
+                    </li>
+                </ul>
+                <img src="img/product/bigscreen.jpg" alt="picture_1" class="product__bigscreen">
+            </div>
+            <div class="product__heading">
+                <h1 class="product__title">Кресло груша SHARKY BEAN </h1>
+                <p class="all__money">$60.00 USD</p>
+                <div class="product__bascket"> 
+                    <div class="product__bascket_wrapper">    
+                        <button type="button" class="button product__button"><svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2C0 0.895431 0.966658 0 2.15909 0H16.8409C18.0333 0 19 0.895431 19 2C19 3.10457 18.0333 4 16.8409 4H2.15909C0.966658 4 0 3.10457 0 2Z" fill="#C29974"/>
+                            </svg>
+                        </button>
+                        <label for="input-num"></label>
+                        <input type="text" id="input-num" class="num__input" required placeholder="1">
+                        <button type="button" class="button product__button"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 9.06818C0 7.87575 0.966658 6.90909 2.15909 6.90909H16.8409C18.0333 6.90909 19 7.87575 19 9.06818C19 10.2606 18.0333 11.2273 16.8409 11.2273H2.15909C0.966658 11.2273 0 10.2606 0 9.06818Z" fill="#C29974"/>
+                            <path d="M9.93182 19C8.73939 19 7.77273 18.0333 7.77273 16.8409V2.15909C7.77273 0.966658 8.73939 0 9.93182 0C11.1243 0 12.0909 0.966658 12.0909 2.15909V16.8409C12.0909 18.0333 11.1243 19 9.93182 19Z" fill="#C29974"/>
+                            </svg>
+                        </button>
+                    </div>  
+                    <button type="button" class="button product__button_inbasket">В корзину</button>
+                </div>     
+                <ul class="product__like undoted">
+                    <li class="product__like_item">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z" fill="black"/>
+                        </svg>
+                        <p>Добавить в избранное</p>
+                    </li>
+                    <li class="product__like_item">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14.08C14.24 14.08 13.56 14.38 13.04 14.85L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.16 16.35C12.11 16.56 12.08 16.78 12.08 17C12.08 18.61 13.39 19.92 15 19.92C16.61 19.92 17.92 18.61 17.92 17C17.92 15.39 16.61 14.08 15 14.08Z" fill="black"/>
+                        </svg>
+                        <p>Поделиться с друзьями</p>
+                    </li>
+                </ul>
+                <p>Бесспорно, уравнение времени однократно. Многие кометы имеют два хвоста, однако метеорный дождь
+                   вращает параллакс, как это случилось в 1994 году.
+                </p>
             </div>
         </section>
-        <section class="awards container">
-            <h3 class="awards__title hidden">Awards</h3>
-            <ul class="awards__list undoted">
-                <li class="Awards__item">
-                    <img src="img/index/awardone.png" alt="awards">
+        <section class="product-info">
+            <h3 class="hidden">Описание</h3>
+            <ul class="product_list undoted container">
+                <li class="product__item product__item_wrap">
+                    <a href="#" class="product__link">Описание</a>
                 </li>
-                <li class="Awards__item">
-                    <img src="img/index/awardtwo.png" alt="awards">
+                <li class="product__item">
+                    <a href="#" class="products__heading">Отзовы</a>
                 </li>
-                <li class="Awards__item">
-                    <img src="img/index/awardthree.png" alt="awards">
+                <li class="product__item">
+                    <a href="#" class="products__heading">Характеристики</a>
                 </li>
-                <li class="Awards__item">
-                    <img src="img/index/awardonefour.png" alt="awards">
+            </ul>
+            <div class="product-info__wrraper">
+                <div class="product-info__text container">
+                    <p class="product-info__item">
+                        Бесспорно, уравнение времени однократно. Многие кометы имеют два хвоста, однако метеорный дождь
+                        ращает параллакс, как это случилось в 1994 году.
+                    </p>
+                    <p class="product-info__item">
+                        Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
+                        астероидный Тукан. Туманность Андромеды ищет метеорит.
+                    </p>
+                    <p class="product-info__item">
+                        Бесспорно, уравнение времени однократно. Многие кометы имеют два хвоста, однако метеорный дождь
+                        вращает параллакс, как это случилось в 1994 году.
+
+                    </p>
+                    <p class="product-info__item">
+                        Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
+                        астероидный Тукан. Туманность Андромеды ищет метеорит.
+                    </p>
+                </div>
+            </div>
+        </section> 
+        <section class="interesting container">
+            <h2 class="interesting__heading">Вас может заинтересовать</h2>
+            <ul class="interesting__list undoted">
+                <li class="interesting__link">
+                    <img src="img/product/trade4.png" alt="">
+                    <a href="">Автомат с жвачкой GATCHA GATCHA</a>
+                    <p class="all__money">$56.00 USD</p>
+                </li>
+                <li class="interesting__link">
+                    <img src="img/product/trade5.png" alt="">
+                    <a href="">Свеча CHRISTMAS ADVENT SCENTED</a>
+                    <p class="all__money">$29.00 USD</p>
+                </li>
+                <li class="interesting__link">
+                    <img src="img/product/trade6.png" alt="">
+                    <a href="">набор чайных ложек</a>
+                    <p class="all__money">$56.00 USD</p>
                 </li>
             </ul>
         </section>
-        <article class="about container">
-            <div class="about__design">   
-                <div class="about__wrapper">
-                    <h2 class="about__title-design">Design Life Kids</h2>
-                    <p class="about__heading">О нас</p>
-                    <p class="about__text">Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость вращения отражает
-                        астероидный Тукан.</p>
-                    <button type="button" class=" button about__button">в каталог</button>
-                </div>
-                
-            </div>
-            <div class="about__contacts">
-                <div class="about__wrapper about__wrapper_padding">
-                    <h2 class="about__title-contacts">Контакты</h2>
-                    <p class="about__text">Газопылевое облако пространственно отражает возмущающий фактор. Угловая скорость
-                        вращения отражает астероидный Тукан.</p>
-                </div>
-                <div class="map__wrapper">
-                    <img src="img/index/map.png" alt="map" class="about__map">
-                </div>
-            </div>
-        </article>
     </main>
     <footer>
         <div class="footer container"> 
@@ -284,36 +293,4 @@
             </div>
         </div>
     </footer>
-    <section class="popup container">
-        <form action="#" class="popup__form">
-        
-            <fieldset>
-                <div class="label-wrapper">
-                    <label for="input-name">Имя</label>
-                    <input type="text" id="input-name" class="contact__input" placeholder="Ivan Ivanov" required>
-                </div>
-            </fieldset>
-            <fieldset class="field_2_column">
-                <div class="label-wrapper">
-                    <label for="input-phone">Телефон</label>
-                    <input type="number" id="input-phone" class="contact__input" required>
-                </div>
-                <div class="label-wrapper">
-                    <label for="input-email">Email</label>
-                    <input type="email" id="input-email" class="contact__input" required>
-                </div>        
-                    
-                
-            </fieldset>
-            <fieldset>
-                <div class="label-wrapper">
-                    <label for="input-coment">Комментарий</label>
-                    <textarea cols="30" rows="10">
-                    </textarea>        
-                </div>
-            </fieldset>
-            <button type="submit" class="button contactus__button">Отправить</button>
-        </form>
-    </section>
 </body>
-</html>
