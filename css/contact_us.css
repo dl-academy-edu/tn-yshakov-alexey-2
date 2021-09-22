@@ -1,15 +1,20 @@
+.contactus_margin {
+    margin-top: 14px;
+}
+
 .contactus__title {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 40px;
     line-height: 49px;
     text-transform: uppercase;
-    color: #1E0606; 
+    color: #1e0606;
+    margin: 13px 0px;
 }
 
 .contact-us {
     display: flex;
-    
+    margin-bottom: 60px;
 }
 
 .contact__form {
@@ -21,7 +26,9 @@
     width: 100%;
 }
 
-.text_widht{
+.text_widht {
     max-width: 32%;
 }
-
+.text_widht p {
+    margin: 0px 0px 23px 0px;
+}
