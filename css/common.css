@@ -507,12 +507,12 @@ footer {
     display: block;
     width: 25px;
     height: 25px;
-    background: url(/img/index/star.svg) no-repeat 50% 0;
+    background: url(/img/index/star_.svg) no-repeat 50% 0;
     cursor: pointer;
 }
 
 .rating_block .label_rating:hover, 
   .rating_block .label_rating:hover ~ .label_rating, 
   .rating_block input[type="radio"]:checked ~ .label_rating {
-    background: url(/img/index/star_bright.svg) no-repeat 50% 0;
+    background: url(/img/index/starbright.svg) no-repeat 50% 0;
 }
