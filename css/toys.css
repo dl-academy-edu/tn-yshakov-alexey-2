@@ -1,5 +1,5 @@
 .toy__heading {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 49px;
@@ -32,7 +32,7 @@ legend {
     margin: 0;
     padding: 0;
     margin-bottom: 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Comic Sans MS", sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
@@ -159,7 +159,7 @@ input[type="range"]::-webkit-slider-thumb {
 .choice__choice {
     margin-top: 38px;
     padding: 9px 22px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -260,14 +260,14 @@ input[type="range"]::-webkit-slider-thumb {
 .products {
     display: flex;
     flex-direction: column;
-    margin-bottom: 119px;
+    margin-bottom: 68px;
 }
 
 .products__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 53px;
+    margin-bottom: 24px;
 }
 
 .products__item {
@@ -275,6 +275,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 48px;
 }
 
 .item__text {
@@ -283,6 +284,8 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 14px;
     line-height: 19px;
     text-align: center;
+    text-transform: uppercase;
+    padding-top: 22px;
 }
 
 .item__price {
@@ -306,7 +309,7 @@ input[type="range"]::-webkit-slider-thumb {
     content: "Подробнее";
     padding-top: 90px;
     background-color: #e5eaf8;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 29px;
@@ -332,7 +335,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 58px;
+    
 }
 
 .arrow__scroll,
@@ -345,7 +348,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .button__scroll {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

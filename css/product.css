@@ -2,7 +2,7 @@
     margin-top: 10px;
 }
 .product__title {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: bold;
     font-size: 40px;
     line-height: 49px;
@@ -109,7 +109,7 @@
 }
 
 .interesting__heading {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
