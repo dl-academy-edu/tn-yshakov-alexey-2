@@ -19,7 +19,7 @@
 }
 
 .banner_num {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 60px;
@@ -69,7 +69,7 @@
 }
 
 .banner__heading {
-    font-family: "Crimson Text", serif;
+    font-family: "Crimson Text", "Comic Sans MS", sans-serif;
     font-style: italic;
     font-size: 20px;
     line-height: 25px;
@@ -127,7 +127,7 @@
 }
 
 .services__img_one {
-    background: url(../img/index/clothes\ for\ boys.png);
+    background: url(../img/index/clothesforboys.png);
     background-color: #dbe4db;
     background-repeat: no-repeat;
     background-position: center;
@@ -156,7 +156,7 @@
     background-blend-mode: multiply;
 }
 .services__text {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -180,7 +180,7 @@
 }
 .services__arrow > p {
     max-width: 60%;
-    font-family: Open Sans;
+    font-family: "Open Sans", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -242,7 +242,7 @@
 }
 
 .delivery__link {
-    font-family: Crimson Text;
+    font-family: "Crimson Text", "Comic Sans MS", sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 26px;
@@ -285,7 +285,7 @@
 
 /*About*/
 .about__title {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Comic Sans MS", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
