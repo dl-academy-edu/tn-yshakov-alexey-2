@@ -507,7 +507,7 @@ footer {
     display: block;
     width: 25px;
     height: 25px;
-    background: url(/img/index/Star.svg) no-repeat 50% 0;
+    background: url(/img/index/star.svg) no-repeat 50% 0;
     cursor: pointer;
 }
 
